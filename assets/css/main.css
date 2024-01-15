@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
 
 
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -12,27 +11,32 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
- header, hgroup, menu, nav, output, ruby,
+header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
- header, hgroup, menu, nav, section {
-	display: block;}
-footer{
+header, hgroup, menu, nav, section {
+	display: block;
+}
+
+footer {
 	text-align: center;
 	display: flex;
 	padding: 50px;
 	margin: 50px;
 }
-.copyright{
+
+.copyright {
 	text-align: center;
 }
+
 body {
 	line-height: 1;
 }
@@ -41,18 +45,19 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+/* Add the following styles for button alignment */
+ul.actions {
+	text-align: center;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+ul.actions li {
+	display: inline-block;
+}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+ul.actions a {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px; /* Adjust the margin as needed */
 }
 
 body {
@@ -78,49 +83,48 @@ input, select, textarea {
 
 /* Basic */
 
-	@-ms-viewport {
-		width: device-width;
+@-ms-viewport {
+	width: device-width;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+	html, body {
+		min-width: 320px;
 	}
+}
 
-	body {
-		-ms-overflow-style: scrollbar;
-	}
+html {
+	box-sizing: border-box;
+}
 
-	@media screen and (max-width: 480px) {
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
-		html, body {
-			min-width: 320px;
-		}
+html {
+	overflow-x: hidden;
+}
 
-	}
+body {
+	background: #ffffff;
+	overflow-x: hidden;
+}
 
-	html {
-		box-sizing: border-box;
-	}
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
 
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-
-	html {
-		overflow-x: hidden;
-	}
-
-	body {
-		background: #ffffff;
-		overflow-x: hidden;
-	}
-
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
 
 /* Typography */
 
