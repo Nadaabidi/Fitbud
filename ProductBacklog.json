@@ -1,0 +1,430 @@
+{
+    "projects": [
+        {
+            "name": "FitBud",
+            "key": "FITBUD",
+            "type": "software",
+            "description": "FitBud Project Backlog",
+            "issues": [
+                {
+                    "summary": "New user registers an account",
+                    "description": "As a new user, I want to register an account so that I can start using the app.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can enter their personal information (email, password, etc.).",
+                        "The system validates the entered information for correctness.",
+                        "The user receives a confirmation email after registration.",
+                        "The user can log in with the newly created credentials."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User logs in",
+                    "description": "As a user, I want to log in to access my profile and preferences.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Specific criteria based on story requirements."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User recovers/resets password",
+                    "description": "As a user, I want to recover/reset my password if forgotten.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can request a password reset via email.",
+                        "The user receives a password reset link.",
+                        "The user can set a new password using the link."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User updates profile information",
+                    "description": "As a user, I want to update my profile information so that I can share relevant detailswith others.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can access and edit their profile information.",
+                        "Changes are saved and reflected immediately upon update."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User views other users' profiles",
+                    "description": "As a user, I want to view other users' profiles so that I can find potential matches.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can access and edit their profile information.",
+                        "Changes are saved and reflected immediately upon update."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User updates sports preferences",
+                    "description": "As a user, I want to update my sports preferences so that the matching algorithm can find suitable matches based on my interests.",
+                    "priority": "Should",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can access and update their sports preferences in the app.",
+                        "The updated preferences are saved and used by the matching algorithm.",
+                        "The user receives a confirmation of the updates."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Admin adds a new sports activity",
+                    "description": "As an admin, I want to add a new sports activity so that I can keep the list of sports activities up-to-date.",
+                    "priority": "Must",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The admin can add new sports activities to the system.",
+                        "The added activity is immediately available for users to select.",
+                        "The system validates the input for correctness and completeness."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "Admin edits existing sports activities",
+                    "description": "As an admin, I want to edit existing sports activities so that I can make corrections or               updates.",
+                    "priority": "Must",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The admin can edit details of existing sports activities.",
+                        "Changes are reflected immediately in the user interface.",
+                        "The system validates the edited information for correctness."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "Admin deletes sports activities",
+                    "description": "As an admin, I want to delete sports activities so that I can remove outdated or irrelevant activities from the list.",
+                    "priority": "Must",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The admin can select and delete sports activities from the system.",
+                        "The deleted activity is immediately removed from the list available to users.",
+                        "The system confirms the deletion to the admin."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "Admin ensures changes reflect in user's sports preferences",
+                    "description": "As an admin, I want the changes made in sports activities to reflect in user's preferences so that users receive accurate and updated information about sports activities.",
+                    "priority": "Must",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Changes in sports activities are reflected in the user's sports preferences.",
+                        "The system automatically updates the user's preferences based on the changes.",
+                        "Users are notified of any significant changes affecting their preferences."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Admin ensures data integrity when editing or deleting activities",
+                    "description": "As an admin, I want to ensure data integrity when editing or deleting activities so that the database remains consistent and free from errors.",
+                    "priority": "Must",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The system maintains data integrity during edit and delete operations.",
+                        "The database remains consistent and free from errors after changes.",
+                        "Back-up and recovery procedures are in place in case of data loss."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Developer creates secure endpoints for admin actions",
+                    "description": "As a developer, I want to create secure endpoints for admin actions so that admin actions are protected from unauthorized access or malicious activities.",
+                    "priority": "Must",
+                    "sprint": 3,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Secure endpoints are created for all admin actions.",
+                        "Endpoints are protected against unauthorized access and malicious activities.",
+                        "Security tests confirm the robustness of the implemented security measures."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User views a list of available sports activities",
+                    "description": "As a user, I want to view a list of available sports activities so that I can explore new activities to engage in.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can view a comprehensive list of available sports activities.",
+                        "The list is updated in real-time with new activities."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User links sports preferences to the sports model",
+                    "description": "As a user, I want my sports preferences to be linked to the sports model so that the matching algorithm considers my activity choices.",
+                    "priority": "Could",
+                    "sprint": 3,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user's sports preferences are linked to the sports model.",
+                        "The matching algorithm uses these preferences to suggest activities."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User accepts or rejects match suggestions",
+                    "description": "As a user, I want to accept or reject match suggestions so that I can control who I connect with.",
+                    "priority": "Must",
+                    "sprint": 3,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can accept or reject match suggestions.",
+                        "The system updates the user's matches based on their choices."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User sees details about matches",
+                    "description": "As a user, I want to see details about my matches so that I can make informed decisions about potential connections.",
+                    "priority": "Must",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can view detailed information about their matches.",
+                        "The details include relevant information to help make connection decisions."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User sends and receives messages to/from matches",
+                    "description": "As a user, I want to send and receive messages to/from my matches so that I can communicate with potential activity partners.",
+                    "priority": "Could",
+                    "sprint": 4,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can send and receive messages with matches.",
+                        "The messaging system is secure and user-friendly."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User marks messages as read/unread",
+                    "description": "As a user, I want to mark messages as read/unread so that I can keep track of communication.",
+                    "priority": "Could",
+                    "sprint": 4,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can mark messages as read or unread.",
+                        "The messaging interface reflects these changes immediately."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User deletes unwanted messages",
+                    "description": "As a user, I want to delete unwanted messages so that I can manage my inbox effectively.",
+                    "priority": "Could",
+                    "sprint": 4,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user can delete unwanted messages from their inbox.",
+                        "The system confirms deletion and removes the messages permanently."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "User wants responsive design for seamless usage on different devices",
+                    "description": "As a user, I want responsive design for seamless usage on different devices so that I can use the app comfortably on any device.",
+                    "priority": "Could",
+                    "sprint": 4,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The app has a responsive design, adapting to different device screens.",
+                        "The user experience is seamless and consistent across devices."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User wants a visually appealing dashboard displaying matches",
+                    "description": "As a user, I want a visually appealing dashboard displaying my matches so that I can access and manage my connections.",
+                    "priority": "Could",
+                    "sprint": 4,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The dashboard is visually appealing with a user-friendly interface.",
+                        "The dashboard displays matches in an organized and accessible manner.",
+                        "Users can easily manage and interact with their matches from the dashboard."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Developer conducts unit tests for each component",
+                    "description": "As a developer, I want to conduct unit tests for each component to ensure individual components work correctly.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Unit tests cover each component of the application.",
+                        "Tests confirm that individual components work correctly.",
+                        "Test results are documented for future reference."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Developer performs integration tests for API endpoints",
+                    "description": "As a developer, I want to perform integration tests for API endpoints to verify the seamless interaction of different components.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Integration tests cover all API endpoints.",
+                        "Tests ensure seamless interaction between different components.",
+                        "Test results demonstrate the reliability of API interactions."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User experiences a bug-free application",
+                    "description": "As a user, I want to experience a bug-free application so that I can enjoy a reliable user experience.",
+                    "priority": "Should",
+                    "sprint": 3,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The application functions without critical bugs or issues.",
+                        "Users report a smooth and reliable experience.",
+                        "Bug tracking and resolution processes are in place."
+                    ],
+                    "storyPoints": 4
+                },
+                {
+                    "summary": "Developer deploys the application to a reliable hosting platform",
+                    "description": "As a developer, I want to deploy the application to a reliable hosting platform so that users can access the app without interruptions.",
+                    "priority": "Should",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The application is deployed on a reliable and scalable hosting platform.",
+                        "Users access the app without interruptions or downtime.",
+                        "Deployment processes are documented and reproducible."
+                    ],
+                    "storyPoints": 2
+                },
+                {
+                    "summary": "Developer monitors app performance and user feedback",
+                    "description": "As a developer, I want to monitor app performance and user feedback so that I can address issues promptly and enhance user satisfaction.",
+                    "priority": "Could",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Continuous monitoring of app performance is established.",
+                        "User feedback is regularly collected and analyzed.",
+                        "Quick response mechanisms are in place for addressing issues."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User wants notifications for new matches and messages",
+                    "description": "As a user, I want notifications for new matches and messages so that I can stay informed and engaged with the app.",
+                    "priority": "Should",
+                    "sprint": 4,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The user receives timely notifications for new matches and messages.",
+                        "Notifications settings can be customized by the user.",
+                        "Notifications are clear, concise, and relevant."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Developer implements additional features based on user feedback",
+                    "description": "As a developer, I want to implement additional features based on user feedback so that I can continuously improve the app's functionality.",
+                    "priority": "Should",
+                    "sprint": 5,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Features are prioritized and implemented based on user feedback.",
+                        "Implemented features are tested and integrated into the app.",
+                        "Feedback loop is established for continuous improvement."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Developer documents the codebase comprehensively",
+                    "description": "As a developer, I want to document the codebase comprehensively so that new contributors can set up and contribute to the project.",
+                    "priority": "Should",
+                    "sprint": 5,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "The entire codebase is thoroughly documented.",
+                        "Documentation includes setup guides, code comments, and usage instructions.",
+                        "Documentation is accessible and understandable to new contributors."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "User wants data to be secure and private",
+                    "description": "As a user, I want my data to be secure and private so that my personal information is protected.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "User data is securely stored and managed.",
+                        "Privacy settings allow users to control their data.",
+                        "Users are informed about data usage and privacy policies."
+                    ],
+                    "storyPoints": 4
+                },
+                {
+                    "summary": "Developer implements secure authentication and authorization",
+                    "description": "As a developer, I want to implement secure authentication and authorization to ensure user data remains confidential and secure.",
+                    "priority": "Must",
+                    "sprint": 1,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Authentication and authorization mechanisms are robust and secure.",
+                        "User data remains confidential and secure at all times.",
+                        "Security measures are compliant with relevant standards."
+                    ],
+                    "storyPoints": 4
+                },
+                {
+                    "summary": "Developer conducts security testing for vulnerabilities",
+                    "description": "As a developer, I want to conduct security testing for vulnerabilities to identify and address potential security risks.",
+                    "priority": "Should",
+                    "sprint": 2,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Comprehensive security testing is conducted to identify vulnerabilities.",
+                        "Testing covers all critical aspects of the app.",
+                        "Identified vulnerabilities are promptly addressed."
+                    ],
+                    "storyPoints": 3
+                },
+                {
+                    "summary": "Developer implements optimized database queries for better performance",
+                    "description": "As a developer, I want to implement optimized database queries for better performance to ensure the app remains responsive.",
+                    "priority": "Should",
+                    "sprint": 3,
+                    "issueType": "Story",
+                    "acceptanceCriteria": [
+                        "Database queries are optimized for performance.",
+                        "App responsiveness is maintained or improved.",
+                        "Optimizations are tested to ensure data accuracy."
+                    ],
+                    "storyPoints": 3
+                }
+            ]
+        }
+    ]
+}
